@@ -1,0 +1,18 @@
+FROM node:18
+
+WORKDIR /usr/src/app
+
+# Copia apenas o package.json e package-lock.json para instalar as dependências
+COPY package*.json ./
+
+# Instala as dependências
+RUN npm install
+
+# Copia o restante dos arquivos do projeto
+COPY . .
+
+# Expõe a porta 3000
+EXPOSE 3000
+
+# Comando para iniciar a aplicação
+CMD ["npm", "start"]
