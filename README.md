@@ -2,4 +2,4 @@
 
 ## [go](./go/README.md)
 
-## [Nginx com Node.js](./node/README.md)
+## [Nginx com Node.js](./nginx-node/README.md)
